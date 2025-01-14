@@ -27,7 +27,7 @@ jobs:
         run: pnpm prune --prod --workspace-root
 
       - name: Zip artifact
-        run: zip -r artifact.zip package.json dist LICENSE -q --symLink
+        run: zip -r artifact.zip package.json dist LICENSE -q
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
