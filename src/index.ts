@@ -19,7 +19,7 @@ export const modalFields = (
           clientProps: {
             toggleButtonType,
           },
-          path: '@innovixx/payload-modal-fields/components#ModalGroupField'
+          path: '@innovixx/payload-drawer-fields/components#ModalGroupField'
         },
       },
     },

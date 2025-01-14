@@ -10,7 +10,7 @@ services:
       - ~/.ssh:/home/vscode/.ssh:cached
       - ~/.npmrc:/home/vscode/.npmrc:cached
     command: sleep infinity
-    working_dir: /workspaces/payload-modal-fields
+    working_dir: /workspaces/payload-drawer-fields
 
   db:
     image: mongo:latest

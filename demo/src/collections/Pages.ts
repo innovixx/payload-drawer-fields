@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
-import { modalFields } from '@innovixx/payload-modal-fields'
+import { modalFields } from '@innovixx/payload-drawer-fields'
 
 export const Pages: CollectionConfig = {
   slug: 'pages',

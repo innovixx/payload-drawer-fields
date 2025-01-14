@@ -29,10 +29,10 @@
       "@payload-config": [
         "./src/payload.config.ts"
       ],
-      "@innovixx/payload-modal-fields": [
+      "@innovixx/payload-drawer-fields": [
         "../dist"
       ],
-      "@innovixx/payload-modal-fields/components": [
+      "@innovixx/payload-drawer-fields/components": [
         "../dist/components"
       ],
     },
