@@ -23,8 +23,9 @@
         "name": "next"
       }
     ],
+    "tsBuildInfoFile": "/dev/null"
   },
   "include": [
     "src/**/*"
-  ],
+  ]
 }
