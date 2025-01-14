@@ -3,12 +3,11 @@
 import type { FieldClientComponent, FieldPaths, GroupFieldClient } from 'payload'
 
 import { getTranslation } from '@payloadcms/translations'
-import { Drawer, DrawerToggler, ErrorPill, fieldBaseClass, FieldDescription, FieldLabel, RenderCustomComponent, SaveButton, useField, useFormSubmitted, useModal, useTranslation, withCondition, XIcon } from '@payloadcms/ui'
+import { Drawer, DrawerToggler, ErrorPill, fieldBaseClass, FieldDescription, FieldLabel, RenderCustomComponent, RenderFields, SaveButton, useField, useFormSubmitted, useModal, useTranslation, withCondition, XIcon } from '@payloadcms/ui'
 import React, { useMemo } from 'react'
 
 import './index.scss'
 import { mergeFieldStyles } from '../../utils/mergeFieldStyles'
-import { RenderFields } from '../RenderFields'
 import { GearIcon } from './GearIcon'
 import { GroupProvider } from './provider'
 
