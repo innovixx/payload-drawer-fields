@@ -1,5 +1,5 @@
 {
-	"name": "payload-field-boilerplate",
+	"name": "payload-modal-fields",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",

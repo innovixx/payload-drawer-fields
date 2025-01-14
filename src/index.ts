@@ -14,7 +14,7 @@ export const customField = (
       components: {
         ...rest?.admin?.components,
         Field: {
-          path: '@innovixx/payload-field-boilerplate/components#CustomField',
+          path: '@innovixx/payload-modal-fields/components#CustomField',
         },
       },
     },
