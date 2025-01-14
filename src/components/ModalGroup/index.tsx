@@ -8,7 +8,6 @@ import React, { useMemo } from 'react'
 
 import './index.scss'
 import { mergeFieldStyles } from '../../utils/mergeFieldStyles'
-import { GearIcon } from './GearIcon'
 import { GroupProvider } from './provider'
 
 type ExtendedGroupFieldClientComponent = FieldClientComponent<{ type?: string } & GroupFieldClient, { toggleButtonType?: 'button' | 'settingIcon' } & FieldPaths>
