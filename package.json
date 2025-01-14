@@ -1,0 +1,82 @@
+{
+  "name": "@innovixx/payload-field-boilerplate",
+  "version": "0.0.1",
+  "homepage:": "https://innovixx.co.uk",
+  "repository": "git@github.com:innovixx/payload-field-boilerplate.git",
+  "description": "This Git repo provides a boilerplate for creating a payload-field. It includes all the necessary files and dependencies to set up a basic structure for developing a custom field. Developers can save time by using this boilerplate as a starting point for their own field development.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && pnpm copy:scss",
+    "watch": "nodemon --watch src -e ts,tsx,scss --exec \"pnpm build\"",
+    "copy:scss": "copyfiles -u 1 \"src/**/*.scss\" dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix --ext .ts,.tsx src"
+  },
+  "keywords": [
+    "payload",
+    "cms",
+    "plugin",
+    "typescript",
+    "react"
+  ],
+  "author": "support@innovixx.co.uk",
+  "license": "MIT",
+  "peerDependencies": {
+    "next": "^15.0.0",
+    "payload": "^3.2.2",
+    "react": "^19.0.0-rc-65a56d0e-20241020"
+  },
+  "devDependencies": {
+    "@payloadcms/eslint-config": "^3.0.0",
+    "@payloadcms/eslint-plugin": "^3.0.0",
+    "@payloadcms/next": "3.2.2",
+    "@payloadcms/translations": "3.2.2",
+    "@payloadcms/ui": "3.2.2",
+    "@types/node": "^20.14.14",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "@typescript-eslint/eslint-plugin": "5.12.1",
+    "@typescript-eslint/parser": "5.12.1",
+    "copyfiles": "^2.4.1",
+    "cross-env": "^7.0.3",
+    "next": "15.0.0",
+    "nodemon": "^2.0.6",
+    "payload": "3.2.2",
+    "prettier": "^2.7.1",
+    "react": "19.0.0-rc-65a56d0e-20241020",
+    "react-dom": "19.0.0-rc-65a56d0e-20241020",
+    "ts-node": "^9.1.1",
+    "typescript": "5.7.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./components": {
+      "import": "./dist/components/index.js",
+      "types": "./dist/components/index.d.ts",
+      "default": "./dist/components/index.js"
+    }
+  },
+  "dependencies": {
+    "deepmerge": "^4.3.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "npm:types-react@19.0.0-rc.1",
+      "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
+    }
+  },
+  "overrides": {
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
+  }
+}
