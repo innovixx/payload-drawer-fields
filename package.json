@@ -25,7 +25,7 @@
   "peerDependencies": {
     "next": "^15.0.0",
     "payload": "^3.16.0",
-    "react": "^19.0.0-rc-65a56d0e-20241020"
+    "react": "^19.0.0"
   },
   "devDependencies": {
     "@payloadcms/eslint-config": "^3.0.0",
@@ -65,18 +65,5 @@
       "types": "./dist/components/index.d.ts",
       "default": "./dist/components/index.js"
     }
-  },
-  "dependencies": {
-    "deepmerge": "^4.3.1"
-  },
-  "pnpm": {
-    "overrides": {
-      "@types/react": "npm:types-react@19.0.0-rc.1",
-      "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
-    }
-  },
-  "overrides": {
-    "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
   }
 }
