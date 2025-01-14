@@ -1,22 +1,27 @@
-import type { Field, TextField } from "payload"
+import type { Field, GroupField } from "payload"
 
-export const customField = (
-  options?: Partial<TextField>,
+export const modalFields = (
+  options: {
+    toggleButtonType?: 'button' | 'settingIcon'
+  } & Omit<GroupField, 'type'>,
 ): Field => {
-  const { name, ...rest } = options || {}
+  const { name, toggleButtonType = 'button', ...rest } = options
 
   return {
     ...rest,
     name: name || 'custom',
-    type: 'text',
+    type: 'group',
     admin: {
       ...rest?.admin,
       components: {
         ...rest?.admin?.components,
         Field: {
-          path: '@innovixx/payload-modal-fields/components#CustomField',
+          clientProps: {
+            toggleButtonType,
+          },
+          path: '@innovixx/payload-modal-fields/components#ModalGroupField'
         },
       },
     },
-  } as TextField
+  }
 }

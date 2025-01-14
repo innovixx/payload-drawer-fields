@@ -1,1 +1,1 @@
-export * from './Custom'
+export * from './ModalGroup'

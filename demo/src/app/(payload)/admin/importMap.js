@@ -1,5 +1,5 @@
-import { CustomField as CustomField_93d3806ac614f6a90065ab46d26d7975 } from '@innovixx/payload-modal-fields/components'
+import { ModalGroupField as ModalGroupField_8beb81cbbb906b71f47c34cbcde1d0e5 } from '@innovixx/payload-modal-fields/components'
 
 export const importMap = {
-  "@innovixx/payload-modal-fields/components#CustomField": CustomField_93d3806ac614f6a90065ab46d26d7975
+  "@innovixx/payload-modal-fields/components#ModalGroupField": ModalGroupField_8beb81cbbb906b71f47c34cbcde1d0e5
 }

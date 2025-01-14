@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
-import { customField } from '@innovixx/payload-modal-fields'
+import { modalFields } from '@innovixx/payload-modal-fields'
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
@@ -10,8 +10,82 @@ export const Pages: CollectionConfig = {
       type: 'text',
       required: true,
     },
-    customField({
-      label: 'Custom Field',
+    modalFields({
+      name: 'customPageSettings',
+      admin: {
+        position: 'sidebar',
+      },
+      fields: [
+        {
+          name: 'padding',
+          type: 'group',
+          fields: [
+            {
+              type: 'row',
+              fields: [
+                {
+                  name: 'paddingTop',
+                  type: 'number',
+                  defaultValue: 0,
+                },
+                {
+                  name: 'paddingLeft',
+                  type: 'number',
+                  defaultValue: 20,
+                },
+                {
+                  name: 'paddingBottom',
+                  type: 'number',
+                  defaultValue: 0,
+                },
+                {
+                  name: 'paddingRight',
+                  type: 'number',
+                  defaultValue: 20,
+                },
+              ]
+            },
+          ]
+        },
+        {
+          name: 'fontSizes',
+          type: 'group',
+          fields: [
+            {
+              name: 'h1',
+              type: 'number',
+              defaultValue: 32,
+            },
+            {
+              name: 'h2',
+              type: 'number',
+              defaultValue: 24,
+            },
+            {
+              name: 'h3',
+              type: 'number',
+              defaultValue: 20,
+            },
+            {
+              name: 'h4',
+              type: 'number',
+              defaultValue: 18,
+            },
+            {
+              name: 'h5',
+              type: 'number',
+              defaultValue: 16,
+            },
+            {
+              name: 'p',
+              type: 'number',
+              defaultValue: 16,
+            },
+          ]
+        }
+      ],
+      label: 'Custom Page Settings',
+      toggleButtonType: 'button',
     }),
     {
       name: 'slug',
