@@ -188,6 +188,13 @@ html[data-theme='dark'] {
   }
 }
 
+
+.modal-group-drawer {
+  & .drawer__content {
+    width: 66.66% !important;
+  }
+}
+
 .modal-group-drawer-button {
   margin: 0;
   margin-bottom: var(--base);
@@ -202,8 +209,8 @@ html[data-theme='dark'] {
 .modal-group-drawer-button--setting-icon {
   position: absolute;
   right: 0;
-  top: -25px;
-  z-index: 2000;
+  top: -28px;
+  z-index: 1;
 
   & svg {
     fill: var(--theme-elevation-800);

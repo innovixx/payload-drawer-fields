@@ -105,6 +105,7 @@ export const ModalGroupFieldComponent: ExtendedGroupFieldClientComponent = (prop
         }
       </DrawerToggler>
       <Drawer
+        className={`modal-group-drawer`}
         Header={CustomLabel}
         slug={`${name}-modal`}
         title={getTranslation(label, i18n)}

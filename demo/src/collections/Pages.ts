@@ -99,6 +99,17 @@ export const Pages: CollectionConfig = {
       name: 'excerpt',
       type: 'text',
     },
+    modalFields({
+      name: 'dateSettings',
+      fields: [
+        {
+          name: 'renderDateSchema',
+          type: 'text',
+        }
+      ],
+      label: 'Date Settings',
+      toggleButtonType: 'settingIcon'
+    }),
     {
       name: 'date',
       type: 'date',
