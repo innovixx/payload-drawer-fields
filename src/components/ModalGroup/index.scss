@@ -217,6 +217,16 @@ html[data-theme='dark'] {
   }
 }
 
+.modal-group-drawer-button--block-setting-icon {
+  position: absolute;
+  right: 50px;
+  top: -78px;
+  z-index: 1;
+
+  & svg {
+    fill: var(--theme-elevation-800);
+  }
+}
 .modal-group-drawer__container {
   position: relative;
 }

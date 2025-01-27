@@ -10,7 +10,7 @@ import './index.scss'
 import { mergeFieldStyles } from '../../utils/mergeFieldStyles'
 import { GroupProvider } from './provider'
 
-type ExtendedGroupFieldClientComponent = FieldClientComponent<{ type?: string } & GroupFieldClient, { toggleButtonType?: 'button' | 'settingIcon' } & FieldPaths>
+type ExtendedGroupFieldClientComponent = FieldClientComponent<{ type?: string } & GroupFieldClient, { toggleButtonType?: 'blockSettingIcon' | 'button' | 'settingIcon' } & FieldPaths>
 
 const baseClass = 'modal-group-field'
 
@@ -84,10 +84,11 @@ export const ModalGroupFieldComponent: ExtendedGroupFieldClientComponent = (prop
     <div className={`modal-group-drawer__container`}>
       <DrawerToggler
         className={['btn',
-          toggleButtonType !== 'settingIcon' && 'btn--style-secondary',
-          toggleButtonType !== 'settingIcon' && 'modal-group-drawer-button',
+          !['blockSettingIcon', 'settingIcon'].includes(toggleButtonType) && 'btn--style-secondary',
+          !['blockSettingIcon', 'settingIcon'].includes(toggleButtonType) && 'modal-group-drawer-button',
           fieldHasErrors && `modal-group-drawer-button--has-error`,
           toggleButtonType === 'settingIcon' && 'modal-group-drawer-button--setting-icon',
+          toggleButtonType === 'blockSettingIcon' && 'modal-group-drawer-button--block-setting-icon',
         ].filter(Boolean)
           .join(' ')}
         slug={`${name}-modal`}
