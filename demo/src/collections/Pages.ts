@@ -96,6 +96,31 @@ export const Pages: CollectionConfig = {
       required: true,
     },
     {
+      name: 'blocks',
+      type: 'blocks',
+      blocks: [
+        {
+          slug: 'text',
+          fields: [
+            modalFields({
+              name: 'textBlockSettings',
+              fields: [
+                {
+                  name: 'enabled',
+                  type: 'checkbox',
+                }
+              ],
+              toggleButtonType: 'blockSettingIcon'
+            }),
+            {
+              name: 'content',
+              type: 'textarea',
+            }
+          ]
+        }
+      ]
+    },
+    {
       name: 'excerpt',
       type: 'text',
     },
