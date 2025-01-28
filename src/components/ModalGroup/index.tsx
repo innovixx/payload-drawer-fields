@@ -70,7 +70,7 @@ export const ModalGroupFieldComponent: ExtendedGroupFieldClientComponent = (prop
             aria-label={t('general:close')}
             className={`${baseClass}__header__close`}
             id={`close-drawer__${`${name}-modal`}`}
-            onClick={() => closeModal(`${name}-modal`)}
+            onClick={() => closeModal(`field-${path?.replace(/\./g, '__')}-modal`)}
             type="button"
           >
             <XIcon />
@@ -91,7 +91,7 @@ export const ModalGroupFieldComponent: ExtendedGroupFieldClientComponent = (prop
           toggleButtonType === 'blockSettingIcon' && 'modal-group-drawer-button--block-setting-icon',
         ].filter(Boolean)
           .join(' ')}
-        slug={`${name}-modal`}
+        slug={`field-${path?.replace(/\./g, '__')}-modal`}
       >
         {
           toggleButtonType === 'button' ? (
@@ -108,7 +108,7 @@ export const ModalGroupFieldComponent: ExtendedGroupFieldClientComponent = (prop
       <Drawer
         className={`modal-group-drawer`}
         Header={CustomLabel}
-        slug={`${name}-modal`}
+        slug={`field-${path?.replace(/\./g, '__')}-modal`}
         title={getTranslation(label, i18n)}
       >
         <div
