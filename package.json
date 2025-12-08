@@ -23,7 +23,7 @@
   "author": "support@innovixx.co.uk",
   "license": "MIT",
   "peerDependencies": {
-    "next": "^15.0.0",
+    "next": "15.0.5",
     "payload": "^3.16.0",
     "react": "^19.0.0"
   },
@@ -40,7 +40,7 @@
     "@typescript-eslint/parser": "5.12.1",
     "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
-    "next": "15.0.0",
+    "next": "15.0.5",
     "nodemon": "^2.0.6",
     "payload": "3.16.0",
     "prettier": "^2.7.1",

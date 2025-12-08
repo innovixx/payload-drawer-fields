@@ -1,3 +1,7 @@
 packages:
-  - '.'
-  - 'demo'
+  - .
+  - demo
+
+onlyBuiltDependencies:
+  - esbuild
+  - sharp
