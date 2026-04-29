@@ -89,6 +89,11 @@ jobs:
           registry-url: https://npm.pkg.github.com/
 
       - name: Publish to GitHub Packages
-        run: npm publish
+        run: |
+          if [ "${{ github.event.release.prerelease }}" = "true" ]; then
+          npm publish --tag beta
+          else
+          npm publish
+          fi
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
