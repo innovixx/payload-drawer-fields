@@ -14,7 +14,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
       {
@@ -34,7 +34,7 @@
       ],
       "@innovixx/payload-drawer-fields/components": [
         "../dist/components"
-      ],
+      ]
     },
     "target": "ES2022"
   },
@@ -44,7 +44,8 @@
     "../src/**/*.ts",
     "../src/**/*.tsx",
     "next.config.mjs",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

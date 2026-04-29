@@ -2,6 +2,7 @@ import type { Field, GroupField } from "payload"
 
 export const modalFields = (
   options: {
+    name: string
     toggleButtonType?: 'blockSettingIcon' | 'button' | 'settingIcon'
   } & Omit<GroupField, 'type'>,
 ): Field => {

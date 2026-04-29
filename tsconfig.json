@@ -6,6 +6,7 @@
       "ES2022"
     ],
     "outDir": "./dist",
+    "rootDir": "./src",
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -15,7 +16,6 @@
     "isolatedModules": true,
     "incremental": true,
     "declaration": true,
-    "declarationDir": "./dist",
     "jsx": "preserve",
     "target": "ES2022",
     "plugins": [

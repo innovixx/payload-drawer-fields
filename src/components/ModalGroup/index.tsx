@@ -10,8 +10,10 @@ import './index.scss'
 import { mergeFieldStyles } from '../../utils/mergeFieldStyles'
 import { GroupProvider } from './provider'
 
-type ExtendedGroupFieldClientComponent = FieldClientComponent<{ type?: string } & GroupFieldClient, { toggleButtonType?: 'blockSettingIcon' | 'button' | 'settingIcon' } & FieldPaths>
-
+type ExtendedGroupFieldClientComponent = FieldClientComponent<
+  { name: string; type?: string } & GroupFieldClient,
+  { toggleButtonType?: 'blockSettingIcon' | 'button' | 'settingIcon' } & FieldPaths
+>
 const baseClass = 'modal-group-field'
 
 export const ModalGroupFieldComponent: ExtendedGroupFieldClientComponent = (props) => {
@@ -66,7 +68,7 @@ export const ModalGroupFieldComponent: ExtendedGroupFieldClientComponent = (prop
             {fieldHasErrors && <ErrorPill count={errorCount} i18n={i18n} withMessage />}
           </div>
           <button
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
             aria-label={t('general:close')}
             className={`${baseClass}__header__close`}
             id={`close-drawer__${`${name}-modal`}`}
