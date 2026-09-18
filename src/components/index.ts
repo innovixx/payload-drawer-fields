@@ -1,1 +1,1 @@
-export * from './ModalGroup'
+export * from './ModalGroup/index.jsx'
